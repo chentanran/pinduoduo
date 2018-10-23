@@ -39,8 +39,8 @@ $(function(){
               $("#pdd_right_ul").html(data2);
           }
       })
-        // getAjaxData(id);
-   }).trigger("tap");
+        getAjaxData(id);
+   });
 
 });
 

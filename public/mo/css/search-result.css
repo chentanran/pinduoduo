@@ -1,0 +1,54 @@
+.mui-content .filtrate {
+  margin: 10px 10px;
+  height: 40px;
+  display: flex;
+  text-align: center;
+  line-height: 40px;
+  background-color: orange;
+  color: white;
+}
+.mui-content .filtrate .price {
+  flex: 1;
+  border-right: 1px solid #ccc;
+}
+.mui-content .filtrate .sales {
+  flex: 1;
+}
+.mui-content .pdd-brand1-body1 {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mui-content .pdd-brand1-body1 .pdd-brand1-body1-d {
+  margin: 10px 0;
+  box-shadow: 0 0 5px #ccc;
+  width: 49%;
+  padding-bottom: 15px;
+}
+.mui-content .pdd-brand1-body1 .pdd-brand1-body1-d a {
+  width: 100%;
+  text-align: center;
+}
+.mui-content .pdd-brand1-body1 .pdd-brand1-body1-d a img {
+  width: 100%;
+}
+.mui-content .pdd-brand1-body1 .pdd-brand1-body1-d a div span {
+  padding: 0 5px;
+}
+.mui-content .pdd-brand1-body1 .pdd-brand1-body1-d a div span:first-of-type {
+  color: red;
+  font-size: 14px;
+}
+.mui-content .pdd-brand1-body1 .pdd-brand1-body1-d a div span:last-of-type {
+  color: #ccc;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.mui-content .pdd-brand1-body1 .pdd-brand1-body1-d a button {
+  padding: 5px 30px;
+  color: white;
+  background-color: orange;
+  border: 1px solid orange;
+}

@@ -1,0 +1,64 @@
+.mui-content{
+    // padding: 10px;
+    .filtrate{
+        margin: 10px 10px;
+        height: 40px;
+        // width:100%;
+        display: flex;
+        text-align:center;
+        line-height: 40px;
+        background-color: orange;
+        color: white;
+        .price{
+            flex: 1;
+            border-right: 1px solid #ccc; 
+        }
+        .sales{
+            flex: 1;
+        }
+
+    }
+
+    .pdd-brand1-body1{
+        width: 100%;
+         padding: 0 10px;
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+        
+         .pdd-brand1-body1-d{
+             margin: 10px 0;
+             box-shadow: 0 0 5px #ccc;
+             width: 49%;
+             padding-bottom: 15px;
+             a{
+                 width: 100%;
+                 text-align: center;
+                 img{
+                      width:100%;
+
+                 }
+                 div{
+                     span{
+                         padding: 0 5px;
+                         &:first-of-type{
+                             color: red;
+                             font-size: 14px;
+                         }
+                         &:last-of-type{
+                             color: #ccc;
+                             font-size: 12px;
+                             text-decoration: line-through;
+                         }
+                     }
+                 }
+                 button{
+                     padding: 5px 30px;
+                     color: white;
+                     background-color: orange;
+                     border: 1px solid orange;
+                 }
+             }
+         }
+    }
+}

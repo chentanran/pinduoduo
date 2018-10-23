@@ -27,6 +27,9 @@
   font-size: 12px;
   line-height: 12px;
 }
+.history .history-one li a {
+  color: #666;
+}
 .history .history-one li:first-of-type {
   text-align: left;
 }
@@ -39,4 +42,11 @@
 }
 .history .history-one li:last-of-type span {
   font-size: 18px;
+}
+.history .history-one li:last-of-type a {
+  display: inline-block;
+  height: 100%;
+}
+.history .history-two li {
+  color: #666;
 }
