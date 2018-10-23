@@ -1,0 +1,58 @@
+html,
+body,
+div,
+p,
+h1,
+h3,
+h4,
+ul,
+ol,
+li,
+a,
+img,
+header,
+nav,
+footer,
+input {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+li {
+  list-style: none;
+}
+header.mui-bar {
+  background-color: orange;
+  color: white;
+  box-shadow: 0 0 5px #fff;
+}
+header.mui-bar > .mui-title {
+  color: white;
+  letter-spacing: 10px;
+}
+header.mui-bar > .mui-action-back {
+  color: white;
+}
+nav.mui-bar {
+  background-color: orange;
+}
+nav.mui-bar .mui-tab-item p {
+  margin-bottom: 5px;
+  color: #fff;
+}
+nav.mui-bar .mui-tab-item .cart {
+  padding-top: 3px;
+  font-size: 25px;
+}

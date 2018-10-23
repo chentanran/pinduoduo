@@ -1,0 +1,42 @@
+.search {
+  margin: 10px;
+  border: 1px solid orange;
+  display: flex;
+}
+.search input[type="text"] {
+  margin-bottom: 0;
+  border: 1px solid transparent;
+  font-size: 14px;
+}
+.search input[type="button"] {
+  padding: 10px 20px;
+  border: 1px solid orange;
+  background-color: orange;
+  border-radius: none;
+  color: white;
+}
+.history {
+  margin: 10px;
+}
+.history .history-one {
+  display: flex;
+  padding: 5px;
+}
+.history .history-one li {
+  flex: 1;
+  font-size: 12px;
+  line-height: 12px;
+}
+.history .history-one li:first-of-type {
+  text-align: left;
+}
+.history .history-one li:first-of-type a {
+  height: 100%;
+  margin-top: 3px;
+}
+.history .history-one li:last-of-type {
+  text-align: right;
+}
+.history .history-one li:last-of-type span {
+  font-size: 18px;
+}

@@ -1,0 +1,52 @@
+// 基本色
+@basecolor: orange;
+//基本样式设置
+html,body,div,p,h1,h3,h4,ul,ol,li,a,img,header,nav,footer,input{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+a:hover{
+    color: #333;
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+li{
+    list-style: none;
+}
+
+// 头部
+header.mui-bar{
+    background-color: @basecolor;
+    color: white;
+    box-shadow: 0 0 5px #fff;
+    >.mui-title{
+        color: white;
+        letter-spacing: 10px;
+    }
+    >.mui-action-back{
+        color: white;
+    }
+}
+// 尾部
+nav.mui-bar{
+    background-color:@basecolor;
+   
+    .mui-tab-item{
+       p{
+           margin-bottom: 5px;
+           color:#fff;
+       }
+       .cart{
+           padding-top: 3px;
+           font-size: 25px;
+       }
+    }
+}

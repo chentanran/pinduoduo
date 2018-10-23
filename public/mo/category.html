@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模板</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./assets/mui/css/mui.css">
+    <link rel="stylesheet" href="./assets/mui/css/iconfont.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/category.css">
+    <script src="./assets/mui/js/mui.js"></script>
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+    <script src="js/category.js"></script>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></a>
+        <h1 class="mui-title">拼多多</h1>
+        <a class="mui-action-back mui-icon mui-icon-search mui-pull-right"></a>
+    </header>
+    <nav class="mui-bar mui-bar-tab ">
+        <a class="mui-tab-item" href="#Popover_0">
+            <p class="mui-icon mui-icon-home"></p>
+            <p>首页</p>
+        </a>
+        <a class="mui-tab-item" href="#Popover_1">
+            <p class="mui-icon mui-icon-bars"></p>
+            <p>分类</p>
+        </a>
+        </a>
+        <a class="mui-tab-item" href="#Popover_2">
+            <p class="fa fa-shopping-cart cart"></p>
+            <p>购物车</p>
+        </a>
+        </a>
+        <a class="mui-tab-item" href="#Popover_3">
+            <p class="mui-icon mui-icon-contact"></p>
+            <p>会员中心</p>
+        </a>
+        </a>
+
+    </nav>
+    <!-- 列表页 -->
+    <div class="pdd_content">
+        <div class="pdd_content_left ">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll" id="pdd_sidebar">
+                    <!-- <a href="javascript:;">111</a> -->
+                   
+                </div>
+            </div>
+        </div>
+        <div class="pdd_content_right">
+            <div class="pdd_content_right_one ">
+                <div class="mui-scroll-wrapper">
+                    <ul class="mui-scroll" id="pdd_right_ul">
+                       
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script  type="txt/template" id="data1" >
+    <% for(var i = 0; i < rows.length; i++) { %>
+        <a href="javascript:;"  data-id="<%=rows[i].id  %>"><%=rows[i].categoryName;  %></a>
+    <% } %>
+</script>
+<script type="text/template" id="data2">
+    <% for(var i = 0; i < rows.length; i++ ) { %>
+        <li><a href="javascript:;"><img src="<%=rows[i].brandLogo  %>" alt=""><p><%=rows[i].brandName  %></p></a></li>
+    <% } %>
+
+    <% if(!rows.length) { %>
+        <div>没有商品</div>
+    <% } %>
+</script>
+</body>
+
+</html>

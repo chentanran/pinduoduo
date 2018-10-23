@@ -1,0 +1,95 @@
+.mui-content {
+  width: 100%;
+}
+.mui-content .mui-slider .mui-slider-group .mui-slider-item a img {
+  width: 100%;
+}
+.mui-content .mui-slider .mui-slider-indicator {
+  bottom: 10px;
+}
+.mui-content .pdd_nav {
+  padding: 10px;
+}
+.mui-content .pdd_nav ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mui-content .pdd_nav ul li {
+  width: 33.33%;
+}
+.mui-content .pdd_nav ul li a {
+  width: 100%;
+}
+.mui-content .pdd_nav ul li a img {
+  width: 100%;
+}
+.mui-content .pdd-brand {
+  padding: 0 10px;
+  width: 100%;
+}
+.mui-content .pdd-brand .pdd-brand1 {
+  padding-bottom: 10px;
+  width: 100%;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand1-head {
+  width: 100%;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand1-head img {
+  width: 100%;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand-body {
+  width: 100%;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand-body ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand-body ul li {
+  width: 25%;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand-body ul li a {
+  width: 100%;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand-body ul li a img {
+  width: 100%;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand1-body1 {
+  width: 100%;
+  padding: 0 3px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand1-body1 .pdd-brand1-body1-d {
+  margin: 10px 0;
+  box-shadow: 0 0 5px #ccc;
+  width: 49%;
+  padding-bottom: 15px;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand1-body1 .pdd-brand1-body1-d a {
+  width: 100%;
+  text-align: center;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand1-body1 .pdd-brand1-body1-d a img {
+  width: 100%;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand1-body1 .pdd-brand1-body1-d a div span {
+  padding: 0 5px;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand1-body1 .pdd-brand1-body1-d a div span:first-of-type {
+  color: red;
+  font-size: 14px;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand1-body1 .pdd-brand1-body1-d a div span:last-of-type {
+  color: #ccc;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.mui-content .pdd-brand .pdd-brand1 .pdd-brand1-body1 .pdd-brand1-body1-d a button {
+  padding: 5px 30px;
+  color: white;
+  background-color: orange;
+  border: 1px solid orange;
+}
