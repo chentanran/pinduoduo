@@ -15,14 +15,14 @@ $(function(){
             var id = res.rows[0].id;
             $("#pdd_sidebar").find("a").eq(0).addClass("active");
 
-            // getAjaxData(id);
+            getAjaxData(id);
        }
    })
 
    //内容页
 //    var id = 1;
    $("#pdd_sidebar").on("tap","a",function(){
-       console.log(1);
+    //    console.log(1);
       var id =  $(this).data("id");
         $("#pdd_sidebar").find("a").eq(id-1).addClass("active").siblings("a").removeClass("active");
       $.ajax({

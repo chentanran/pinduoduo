@@ -48,6 +48,12 @@ header.mui-bar > .mui-action-back {
 nav.mui-bar {
   background-color: orange;
 }
+nav.mui-bar .mui-tab-item.active p {
+  color: skyblue;
+}
+nav.mui-bar .mui-tab-item:focus p {
+  color: skyblue;
+}
 nav.mui-bar .mui-tab-item p {
   margin-bottom: 5px;
   color: #fff;
