@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模板</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./assets/mui/css/mui.css">
+    <link rel="stylesheet" href="./assets/mui/css/iconfont.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="assets/mui/js/mui.js"></script>
+    <script src="./assets/zepto/zepto.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></a>
+        <h1 class="mui-title">登录页面</h1>
+        
+    </header>
+    <!-- 尾部 -->
+    <nav class="mui-bar mui-bar-tab ">
+        <a class="mui-tab-item active" href="#Popover_0 " >
+            <p class="mui-icon mui-icon-home"></p> 
+            <p>首页</p></a>
+        <a class="mui-tab-item" href="#Popover_1">
+                <p class="mui-icon mui-icon-bars"></p> 
+                <p>分类</p></a>
+        </a>
+        <a class="mui-tab-item" href="#Popover_2">
+                <p class="fa fa-shopping-cart cart"></p> 
+                <p>购物车</p></a>
+        </a>
+        <a class="mui-tab-item" href="#Popover_3">
+                <p class="mui-icon mui-icon-contact"></p> 
+                <p>会员中心</p></a>
+        </a>
+    </nav>
+    <!-- 登录 -->
+    <div class="mui-content">
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <label>用户名</label>
+            <input type="text" class="mui-input-clear" placeholder="请输入用户名" name="username">
+            </div>
+            <div class="mui-input-row">
+                <label>密码</label>
+                <input type="password" class="mui-input-password" placeholder="请输入密码" name="password">
+                <span class="mui-icon mui-icon-eye"></span>
+            </div>
+            <div class="button1">
+                <button type="button" class="mui-btn mui-btn-primary" id="btn">登录</button>
+            </div>
+            <div class="register1">
+                <a href="register.html">立即登录</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

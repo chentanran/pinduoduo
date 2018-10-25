@@ -1,0 +1,23 @@
+body {
+  background-color: #fff;
+}
+.mui-content {
+  background-color: #fff;
+}
+.mui-content #list1 {
+  margin-top: 0;
+}
+.mui-content .list2 li a {
+  font-size: 14px;
+}
+.mui-content .exit {
+  margin: 10px;
+  text-align: center;
+}
+.mui-content .exit a {
+  display: inline-block;
+  padding: 10px 50px;
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+}

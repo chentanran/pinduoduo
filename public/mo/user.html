@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模板</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./assets/mui/css/mui.css">
+    <link rel="stylesheet" href="./assets/mui/css/iconfont.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <script src="./assets/mui/js/mui.js"></script>
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="./js/user.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-back mui-pull-left" href="index.html"></a>
+        <h1 class="mui-title">个人中心</h1>
+        
+    </header>
+    <!-- 尾部 -->
+    <nav class="mui-bar mui-bar-tab ">
+        <a class="mui-tab-item active" href="#Popover_0 " >
+            <p class="mui-icon mui-icon-home"></p> 
+            <p>首页</p></a>
+        <a class="mui-tab-item" href="#Popover_1">
+                <p class="mui-icon mui-icon-bars"></p> 
+                <p>分类</p></a>
+        </a>
+        <a class="mui-tab-item" href="#Popover_2">
+                <p class="fa fa-shopping-cart cart"></p> 
+                <p>购物车</p></a>
+        </a>
+        <a class="mui-tab-item" href="#Popover_3">
+                <p class="mui-icon mui-icon-contact"></p> 
+                <p>会员中心</p></a>
+        </a>
+    </nav>
+    <!-- 个人中心 -->
+    <div class="mui-content">
+        <ul class="mui-table-view " id="list1">
+            <li class="mui-table-view-cell mui-media" id="user">
+                <!-- <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="./images/user.jpg">
+                    <div class="mui-media-body">
+                        <span>幸福</span>
+                        <p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                    </div>
+                </a> -->
+            </li>
+        </ul>
+        <ul class="mui-table-view list2">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="javascript:;">修改密码</a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="javascript:;">我的购物车</a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="javascript:;">收货地址管理</a>
+            </li>
+        </ul>
+        <div class="exit">
+            <a href="javascript:;" id="exit">退出登录</a>
+        </div>
+    </div>
+    <script type="text/template" id="usertemp">
+      
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left" src="./images/user.jpg">
+            <div class="mui-media-body">
+                <span><%=mobile  %></span>
+                <p class='mui-ellipsis'>账号:<%=username  %></p>
+            </div>
+        </a>
+       
+    </script>
+</body>
+</html>

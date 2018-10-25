@@ -18,12 +18,12 @@ $(function(){
             localStorage.setItem("keyword",JSON.stringify([value]));
         }
 
-        window.location.href = "./search-result.html?keyword="+value;
+        // window.location.href = "./search-result.html?keyword="+value;
     })
     //添加数据
     if(localStorage.getItem("keyword")){
         var str = JSON.parse(localStorage.getItem("keyword"));
-
+        
         var html = template("template",{result:str});
 
         $(".history-two").html(html);
@@ -34,7 +34,7 @@ $(function(){
     $(".del").on("tap",function(){
         localStorage.removeItem("keyword");
         $(".history-two").html("");
-        console.log(1);
+        // console.log(1);
     })
 
 })
