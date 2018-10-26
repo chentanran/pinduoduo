@@ -1,24 +1,5 @@
-      //获取验证码
-      var  flag = true;
-   $("#code").on("click",function(){
-    $.ajax({
-        url: "/user/vCode",
-        type: "get",
-        beforeSend: function(){
-            $("#code").html("等待5秒...").css("color","#ccc");
-        },
-        success: function(res){
-            if(flag){
-                console.log(res.vCode);
-            }
-            flag = false;
-
-         setTimeout(function(){
-            $("#code").html("获取验证码").css("color","orange");
-            flag=true;
-         },5000);
-        }
-    })
+$("#code").on("click",function(){
+    getCode("/user/vCode",$("#code"));
 })
 
 $(function(){

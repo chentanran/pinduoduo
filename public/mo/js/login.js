@@ -20,10 +20,11 @@ $(function(){
                 password: password
            },
            beforeSend: function(){
-                $("#btn").html("登陆中").css("backgroundColor","#ccc");
+                
            },
            success: function(res){
               if(res.success){
+                $("#btn").html("登陆中").css("backgroundColor","#ccc");
                   mui.toast("登录成功");
 
                   setTimeout(function(){

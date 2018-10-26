@@ -1,20 +1,23 @@
-  var userinfo = null;
-  //获取用户信息
-   $.ajax({
-    url: "/user/queryUserMessage",
-    type: "get",
-    async: false,
-    beforeSend: function(){
-       // location.href = "login.html";
-    },
-    success: function(res){
-    //    console.log(res);
-       if(res.error && res.error === 400){
-           location.href = "login.html";
-       }
-       userinfo = res;
-    }
-})
+//   var userinfo = null;
+//   //获取用户信息
+//    $.ajax({
+//     url: "/user/queryUserMessage",
+//     type: "get",
+//     async: false,
+//     beforeSend: function(){
+//        // location.href = "login.html";
+//     },
+//     success: function(res){
+//     //    console.log(res);
+//        if(res.error && res.error === 400){
+//            location.href = "login.html";
+//        }
+//        userinfo = res;
+//     }
+// })
+
+var userinfo = userinfo();
+// console.log(userinfo);
 
 $(function(){
     // 退出登录

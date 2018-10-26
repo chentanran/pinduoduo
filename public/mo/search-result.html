@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="./css/search.css">
     <link rel="stylesheet" href="./css/search-result.css">
     <link rel="stylesheet" href="./css/index.css">
+   
     <script src="assets/zepto/zepto.min.js"></script>
     <script src="assets/mui/js/mui.js"></script>
+    <script src="./js/public.js"></script>
     <script src="js/search-result.js"></script>
     <script src="./assets/artTemplate/template-native.js"></script>
-    <script src="./js/public.js"></script>
+    
 </head>
 <body>
     <!-- 头部 -->
@@ -53,7 +55,7 @@
                     <div class="pdd-brand1-body1">
                        
                     </div>
-                    </div>
+                
         </div>
         
     </div>
@@ -67,7 +69,7 @@
                         <span>&yen;<%=data[i].price %></span>
                         <span>&yen;<%=data[i].oldPrice %></span>
                     </div>
-                    <button>购买</button>
+                    <button data-id="<%=data[i].id %>" class="button">购买</button>
                 </a>
             </div>
         <% } %>

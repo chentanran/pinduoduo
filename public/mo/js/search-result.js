@@ -26,26 +26,35 @@ $(function(){
     
         // sorts(prices);
         prices = prices == 1 ? 2 : 1;
-
+        nums = null;
         html = "";
         page = 1;
         //重置上拉加载
         mui('#refreshContainer').pullRefresh().refresh(true);
 
         dataAtAjax();
+        // sorts(prices);
    })
    //产品库存排序
     $(".sales").on("tap",function(){
+        // console.log(1);
         // sorts(nums);
         nums = nums == 1 ? 2 : 1;
+        prices = null;
         html = "";
         page = 1;
         //重置上拉加载
         mui('#refreshContainer').pullRefresh().refresh(true);
     
         dataAtAjax();
+        // sorts(nums);
     })
    
+    //点击购买按钮,获取id 跳转到详情页面
+    $(".pdd-brand1-body1").on("click",".button",function(){
+        var buttonId = $(this).data("id");
+        location.href = "detail.html?buttonId="+buttonId;
+    })
 })
 
 // function sorts(ele){
@@ -75,7 +84,7 @@ function dataAtAjax(){
         },
         success: function(res){
           
-            // console.log(res);
+            console.log(res);
             
             if(res.data.length > 0){
                 html += template("searchResult", res);
@@ -92,46 +101,3 @@ function dataAtAjax(){
 
 }
 
-//获取url传递的参数
-// function getURL(url,name){
-//     if(!url){
-//         return;
-//     }
-
-//     var url = url.split("?")[1];
-
-//     var arr = url.split("&");
-
-//     var str = [];
-//    for(var i = 0; i < arr.length; i++){
-
-//         str = arr[i].split("=");
-
-//         if(str[0] == name){
-//             return str[1];
-//         }
-//    }
-  
-//    return null;
-// }
-
-// 获取地址栏参数
-function getParamsByUrl(url,name){
-
-	var params = url.substr(url.indexOf('?')+1).split('&');
-
-	for(var i=0;i<params.length;i++){
-
-		var param = params[i].split('=');
-
-		if(param[0] == name){
-
-			return param[1];
-
-		}
-
-	}
-
-	return null;
-
-}
