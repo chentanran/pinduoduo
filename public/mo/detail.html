@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模板</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./assets/mui/css/mui.css">
+    <link rel="stylesheet" href="./assets/mui/css/iconfont.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="./assets/zepto/zepto.min.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+   <script src="js/public.js"></script>
+   <script src="./js/detail.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="mui-bar mui-bar-nav">
+        
+        <h1 class="mui-title">拼多多</h1>
+        <a class="mui-action-back mui-icon mui-icon-search mui-pull-right"></a>
+    </header>
+    <!-- 尾部 -->
+    <nav class="mui-bar mui-bar-tab ">
+        <a class="mui-tab-item active" href="#Popover_0 " >
+            <p class="mui-icon mui-icon-home"></p> 
+            <p>首页</p></a>
+        <a class="mui-tab-item" href="#Popover_1">
+                <p class="mui-icon mui-icon-bars"></p> 
+                <p>分类</p></a>
+        </a>
+        <a class="mui-tab-item" href="#Popover_2">
+                <p class="fa fa-shopping-cart cart"></p> 
+                <p>购物车</p></a>
+        </a>
+        <a class="mui-tab-item" href="#Popover_3">
+                <p class="mui-icon mui-icon-contact"></p> 
+                <p>会员中心</p></a>
+        </a>
+    </nav>
+
+    <div class="mui-content" id="content">
+            <!-- <div class="mui-slider">
+                <div class="mui-slider-group">
+                  <div class="mui-slider-item"><a href="#"><img src="images/detail.jpg" /></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="images/detail.jpg" /></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="images/detail.jpg" /></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="images/detail.jpg" /></a></div>
+                </div>
+            </div>
+            <div class="info"> 
+			    匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮
+            </div>
+            <div class="price">
+                价格: <span class="current">&yen;320</span> <span class="original">&yen;668</span>
+            </div>
+            <div class="size">
+                尺码:  &nbsp;&nbsp;<span>35</span>
+                <span>36</span>
+                <span>37</span>
+                <span>38</span>
+                <span>39</span>
+                <span>40</span>
+                <span>41</span>
+                <span>42</span>
+                <span>43</span>
+                <span>44</span>
+                <span>45</span>
+            </div>
+            <div class="number">
+                数量: <span class="left">-</span>
+                <input type="text" value="1">
+                <span class="right">+</span>
+                剩余:  <i>20</i>件
+            </div>
+            <div class="shopping">
+                <a href="javascript:;">查看购物车</a>
+                <a href="javascript:;">加入购物车</a>
+            </div> -->
+    </div>
+
+    <script type="text/template" id="template">
+         <div class="mui-slider">
+                <div class="mui-slider-group">
+                  <div class="mui-slider-item"><a href="#"><img src="<%=pic[0].picAddr %>" /></a></div>
+                  <!-- <div class="mui-slider-item"><a href="#"><img src="<%=pic[0].picName %>" /></a></div> -->
+                </div>
+            </div>
+            <div class="info"> 
+			    <%=proName %>
+            </div>
+            <div class="price">
+                价格: <span class="current">&yen;<%=price %></span> <span class="original">&yen;<%=oldPrice %></span>
+            </div>
+            <div class="size">
+                尺码:  &nbsp;&nbsp;
+                <% var size = size.split("-"); %>
+                <% for(var i = size[0]; i <size[1]; i++) { %>
+                <span><%=i %></span>
+                <% } %>
+               
+            </div>
+            <div class="number">
+                数量: <span class="left">-</span>
+                <input type="text" value="1" id="input">
+                <span class="right">+</span>
+                剩余:  <i><%=num %></i>件
+            </div>
+            <div class="shopping">
+                <a href="javascript:;">查看购物车</a>
+                <a href="javascript:;" id="addshop">加入购物车</a>
+            </div>
+    </script>
+</body>
+</html>

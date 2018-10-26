@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模板</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./assets/mui/css/mui.css">
+    <link rel="stylesheet" href="./assets/mui/css/iconfont.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.css">
+    
+    <link rel="stylesheet" href="./css/address.css">
+    
+    <script src="assets/mui/js/mui.js"></script>
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="./js/public.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="mui-bar mui-bar-nav">
+        
+        <h1 class="mui-title">收货地址管理</h1>
+       
+    </header>
+    <!-- 尾部 -->
+    <nav class="mui-bar mui-bar-tab ">
+        <a class="mui-tab-item active" href="#Popover_0 " >
+            <p class="mui-icon mui-icon-home"></p> 
+            <p>首页</p></a>
+        <a class="mui-tab-item" href="#Popover_1">
+                <p class="mui-icon mui-icon-bars"></p> 
+                <p>分类</p></a>
+        </a>
+        <a class="mui-tab-item" href="#Popover_2">
+                <p class="fa fa-shopping-cart cart"></p> 
+                <p>购物车</p></a>
+        </a>
+        <a class="mui-tab-item" href="#Popover_3">
+                <p class="mui-icon mui-icon-contact"></p> 
+                <p>会员中心</p></a>
+        </a>
+    </nav>
+    <!-- 收货地址 -->
+    <div class="mui-content">
+        <div class="address">
+            <a href="addAddress.html?id=0">添加收货地址</a>
+        </div>
+        <ul class="mui-table-view" id="userinfo">
+            <!-- <li class="mui-table-view-cell">
+                <div class="list_head">
+                    <span>邮编: <i>10010</i></span>
+                    <span>收货人: <i>孙悟空</i></span>
+                </div>
+                <div class="list_body">
+                    武汉市江夏区xxx路xxx
+                </div>
+            </li> -->
+        </ul>
+    </div>
+
+    <script src="js/address.js"></script>
+    <script type="text/template" id="template">
+        <% for(var i = 0; i < data.length; i++) { %>
+            <li class="mui-table-view-cell mui-transitioning mui-media">
+                <div class="mui-slider-right mui-disabled">
+                    <a class="mui-btn mui-btn-red deleteAddress" href="javascript:;" data-id="<%=data[i].id %>">删除</a>
+                    <a class="mui-btn mui-btn-blue updateAddress" href="javascript:;" data-id="<%=data[i].id %>">修改</a>
+                </div>
+                <div class="mui-slider-handle">
+                        <div class="list_head">
+                                <span>邮编: <i><%=data[i].postCode  %></i></span>
+                                <span>收货人: <i><%=data[i].recipients  %></i></span>
+                            </div>
+                            <div class="list_body">
+                               <%=data[i].address  %><%=data[i].addressDetail %>
+                            </div> 
+                </div>
+                
+            </li>
+        <% } %>
+    </script>
+</body>
+</html>

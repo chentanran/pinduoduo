@@ -1,0 +1,19 @@
+.mui-content .address {
+  text-align: center;
+}
+.mui-content .address a {
+  padding: 10px 0;
+  color: orange;
+}
+.mui-content .mui-table-view {
+  background-color: #efeff4;
+}
+.mui-content .mui-table-view .mui-table-view-cell .mui-slider-handle {
+  background-color: #efeff4;
+}
+.mui-content .mui-table-view .mui-table-view-cell .mui-slider-handle .list_head {
+  font-size: 14px;
+}
+.mui-content .mui-table-view .mui-table-view-cell .mui-slider-handle .list_body {
+  font-size: 14px;
+}
