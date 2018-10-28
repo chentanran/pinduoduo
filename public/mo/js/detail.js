@@ -69,7 +69,7 @@ $(function () {
                 mui.confirm("加入成功,要进入购物车吗?",function(message){
                     // console.log(message);
                     if(message.index == 1){
-                        location.href = "shoppingCart.html";
+                        location.href = "cart.html";
                     }
                 })
             }

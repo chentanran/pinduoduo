@@ -49,17 +49,24 @@ body {
   text-align: center;
   font-size: 16px;
 }
+#content .number span:first-of-type {
+  margin-right: -4px;
+}
+#content .number span:last-of-type {
+  margin-left: -5px;
+}
 #content .number input {
   margin-bottom: 0;
   height: 28px;
   width: 28px;
   border-left: none;
   border-right: none;
-  padding: 0;
+  padding: 0 3px;
   text-align: center;
   vertical-align: top;
   display: inline-block;
   border-radius: none;
+  line-height: normal;
 }
 #content .shopping {
   padding: 10px;

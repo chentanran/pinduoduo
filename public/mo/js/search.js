@@ -1,3 +1,5 @@
+userinfo();
+
 $(function(){
    
     $("#search").on("tap",function(){
@@ -8,7 +10,7 @@ $(function(){
         if(!value){
             return;
         }
-           if(localStorage.getItem("keyword",value)){
+           if(localStorage.getItem("keyword")){
                 var keyword = JSON.parse(localStorage.getItem("keyword"));
                 // console.log(keyword);
                 keyword.unshift(value);
@@ -18,7 +20,7 @@ $(function(){
             localStorage.setItem("keyword",JSON.stringify([value]));
         }
 
-        // window.location.href = "./search-result.html?keyword="+value;
+        window.location.href = "./search-result.html?keyword="+value;
     })
     //添加数据
     if(localStorage.getItem("keyword")){

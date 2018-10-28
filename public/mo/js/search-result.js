@@ -1,3 +1,5 @@
+userinfo();
+
 var page = 1;
 var urlName = getParamsByUrl(location.href,"keyword");
 var html = "";
@@ -24,30 +26,28 @@ $(function(){
    //点击排序
    $(".price").on("tap",function(){
     
-        // sorts(prices);
-        prices = prices == 1 ? 2 : 1;
+        // prices = prices == 1 ? 2 : 1;
         nums = null;
-        html = "";
-        page = 1;
-        //重置上拉加载
-        mui('#refreshContainer').pullRefresh().refresh(true);
+        // html = "";
+        // page = 1;
+        // //重置上拉加载
+        // mui('#refreshContainer').pullRefresh().refresh(true);
 
-        dataAtAjax();
-        // sorts(prices);
+        // dataAtAjax();
+        sorts(prices);
    })
    //产品库存排序
     $(".sales").on("tap",function(){
-        // console.log(1);
-        // sorts(nums);
-        nums = nums == 1 ? 2 : 1;
+
+        // nums = nums == 1 ? 2 : 1;
         prices = null;
-        html = "";
-        page = 1;
-        //重置上拉加载
-        mui('#refreshContainer').pullRefresh().refresh(true);
+        // html = "";
+        // page = 1;
+        // //重置上拉加载
+        // mui('#refreshContainer').pullRefresh().refresh(true);
     
-        dataAtAjax();
-        // sorts(nums);
+        // dataAtAjax();
+        sorts(nums);
     })
    
     //点击购买按钮,获取id 跳转到详情页面
@@ -57,15 +57,15 @@ $(function(){
     })
 })
 
-// function sorts(ele){
-//     ele = ele == 1 ? 2 : 1;
-//     html = "";
-//     page = 1;
-//     //重置上拉加载
-//     mui('#refreshContainer').pullRefresh().refresh(true);
+function sorts(ele){
+    ele = ele == 1 ? 2 : 1;
+    html = "";
+    page = 1;
+    //重置上拉加载
+    mui('#refreshContainer').pullRefresh().refresh(true);
 
-//     dataAtAjax();
-// }
+    dataAtAjax();
+}
 
 function dataAtAjax(){
     if(!that){
